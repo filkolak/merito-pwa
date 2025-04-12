@@ -7,8 +7,8 @@
         <h2 class="text-white text-xl font-semibold mb-4">{{ title }}</h2>
   
         <!-- Produkty w gridzie -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          <ProductCard
+        <div class="grid">
+          <ProductListing
               v-for="(product, index) in products"
               :key="index"
               :image="product.image"
@@ -22,7 +22,7 @@
   </template>
   
   <script setup lang="ts">
-  import ProductCard from './ProductCard.vue'
+  import ProductListing from './ProductListing.vue'
   
   defineProps<{
     title: string
