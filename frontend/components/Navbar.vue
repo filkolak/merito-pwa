@@ -1,13 +1,16 @@
 <template>
-<!-- Główna belka nagłówka -->
-<header class="bg-[#1b1b1b] text-white text-sm w-full">
+  <!-- Główna belka nagłówka -->
+  <header class="bg-[#1b1b1b] text-white text-sm w-full">
     <!-- Górna sekcja: logo + search + przyciski -->
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4 px-4 py-3">
 
       <!-- Logo -->
-      <div class="font-bold text-orange-500 text-xl">
-        allegro
-      </div>
+      <NuxtLink to="/">
+        <div class="font-bold text-orange-500 text-xl">
+          allegro
+        </div>
+      </NuxtLink>
+
 
       <!-- Pasek wyszukiwania -->
       <div class="flex flex-col sm:flex-row flex-grow w-full lg:max-w-3xl gap-2">
@@ -49,7 +52,7 @@
 
         <!-- Lewa część -->
         <div class="flex flex-wrap items-center gap-4">
-          <span class="font-semibold">Kategorie</span>
+          <NuxtLink to="listing" class="hover:underline">Kategorie</NuxtLink>
           <a href="#" class="hover:underline">Strefa Okazji</a>
           <a href="#" class="hover:underline">Allegro Protect</a>
           <a href="#" class="hover:underline">Gwarancja najniższej ceny</a>
@@ -64,11 +67,5 @@
     </div>
   </header>
 </template>
-
-<script setup>
-
+<script setup lang="ts">
 </script>
-
-<style scoped>
-
-</style>
