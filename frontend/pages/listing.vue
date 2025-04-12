@@ -9,7 +9,9 @@ const produkty1 = computed(() => data.value?.produkty1 || [])
 <template>
   <BasicSlider />
 
-  <ListingSection title="Listing" :products="produkty1" />
+  <NuxtLink to="/">
+    <ListingSection title="Listing" :products="produkty1" />
+  </NuxtLink>
 </template>
 
 <style scoped></style>
