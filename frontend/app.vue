@@ -1,10 +1,14 @@
 <template>
-  <div>
+  <div data-atr="tenDiv">
     <NuxtRouteAnnouncer />
+    <Navbar/>
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtPage/>
     </NuxtLayout>
+    <FooterArticles />
+    <FooterMain />
   </div>
 </template>
+<script setup lang="ts">
 
-<script setup></script>
+</script>
