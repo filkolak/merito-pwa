@@ -1,2 +1,2 @@
 # merito-pwa
-Projekt zaliczeniony z Tworzenia aplikacji PWA w WSB Merito
+Projekt zaliczeniowy z Tworzenia aplikacji PWA w WSB Merito
